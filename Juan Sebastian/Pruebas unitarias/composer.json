@@ -1,0 +1,12 @@
+{
+        "autoload": {
+        "classmap": [
+            "tests/stubs"
+        ]
+    },
+    "autoload-dev": {
+    "psr-4": {
+        "Tests\\": "tests/"
+    }
+}
+}

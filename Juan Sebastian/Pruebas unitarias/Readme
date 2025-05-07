@@ -1,0 +1,45 @@
+# ✅ Ejecución de Pruebas Unitarias en Dolibarr con PHPUnit
+
+Este proyecto utiliza **PHPUnit** para ejecutar pruebas unitarias en el entorno de Dolibarr. Sigue los pasos a continuación para configurar y ejecutar correctamente los tests.
+
+---
+
+## ⚙️ Requisitos Previos
+
+Antes de ejecutar las pruebas, asegúrate de tener instalado lo siguiente:
+
+- [PHP](https://www.php.net/downloads.php)
+- [Composer](https://getcomposer.org/download/)
+
+Verifica las versiones en tu terminal:
+
+```bash
+php -v
+composer -V
+```
+
+## 📦 Instalación de PHPUnit
+
+Desde el directorio raíz de Dolibarr, ejecuta el siguiente comando para instalar PHPUnit como dependencia de desarrollo:
+
+```bash
+composer require --dev phpunit/phpunit ^9
+```
+
+## 🔄 Generación de Autoload
+
+ara que PHPUnit pueda encontrar correctamente los archivos y clases definidos en composer.json, ejecuta:
+
+```bash
+composer dump-autoload -o
+```
+
+## 🧪 Ejecución de Pruebas
+
+Una vez configurado todo, puedes ejecutar las pruebas con el siguiente comando desde la raíz del proyecto:
+
+```bash
+./vendor/bin/phpunit tests
+```
+
+Debes asegurarte de que el archivo tests este dentro del proyecto de dolibarr

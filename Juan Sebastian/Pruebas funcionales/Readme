@@ -1,0 +1,37 @@
+# 🧪 Ejecución de Pruebas funcionales
+
+Para ejecutar estas pruebas, asegúrate de tener los siguientes requisitos instalados:
+
+---
+
+## ✅ Requisitos
+
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Apache Maven](https://maven.apache.org/install.html)
+
+> 📌 Asegúrate de que `java` y `mvn` estén disponibles en tu terminal (`java -version` y `mvn -version` deberían devolver una versión).
+
+
+## 📁 Preparación del entorno
+
+Antes de ejecutar las pruebas, asegúrate de lo siguiente:
+
+- Los **scripts que pueblan la base de datos** deben estar ubicados en:
+
+```plaintext
+dolibarr/custom/
+```
+---
+
+## 📦 Instalación de dependencias y comando para ejecutar las pruebas
+
+Una vez instalado Maven, navega al directorio raíz del proyecto y ejecuta los siguientes comandos para instalar las dependencias (contenido del pom.xml) y ejecutar las pruebas despues:
+
+```bash
+mvn clean install
+
+mvn clean test
+
+
+
+
